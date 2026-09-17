@@ -1,0 +1,5 @@
+# CPU tools for scoring and rendering recorded Isaac runs (MuJoCo replay with the official Sharpa meshes).
+mujoco==3.3.5
+numpy
+imageio[ffmpeg]
+pillow

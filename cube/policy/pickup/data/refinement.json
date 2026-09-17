@@ -1,0 +1,86 @@
+{
+  "pickup_idle_offset_m": [
+    0,
+    -0.04,
+    0.02
+  ],
+  "pickup_high_m": 0.12,
+  "pedestal_raise_m": 0.18,
+  "unused_relaxation": 0.65,
+  "relax_route": true,
+  "route_ramp_s": 0.0,
+  "route_ramp_faces": [
+    "L"
+  ],
+  "wrap_turn_yaw": true,
+  "wrap_turn_faces": [
+    "L",
+    "F"
+  ],
+  "wrap_yaw_center_deg": -45.0,
+  "continue_nearest_yaw": true,
+  "hold_waiting_wrist": true,
+  "waiting_position_m": [
+    -0.28,
+    -0.24,
+    0.38
+  ],
+  "waiting_lateral_first": false,
+  "grasp_route_limit_m": 0.55,
+  "waiting_hold_fingers": true,
+  "waiting_clearance_m": 0.02,
+  "turn_rest_joints": [
+    0.9,
+    0.3,
+    1.4,
+    0.91,
+    0.9,
+    0.3,
+    1.4,
+    0.91,
+    0.9,
+    0.3,
+    1.4,
+    0.91
+  ],
+  "support_rest_joints": [
+    0.55,
+    0,
+    0.85,
+    0.5
+  ],
+  "reachable_waiting_wrist": true,
+  "support_alignment": {
+    "face": "F",
+    "layer": "nZ",
+    "stiffness": 0.08,
+    "damping": 0.003,
+    "gain": 3.0
+  },
+  "support_open_joints": [
+    1.0959468236224879,
+    -0.3400315025483383,
+    -0.19999999999481669,
+    0.3139557355759668,
+    0.07978826446158686,
+    -0.08594116724069538,
+    0.3789455201854823,
+    0.2366211969600766,
+    0.03233171896525854,
+    -0.3188148356196474,
+    0.608583429563388,
+    0.0842091382502517,
+    0.6150845717588306,
+    -0.2706902249291606,
+    0.14087002991121164,
+    0.25783031508315696,
+    1.4,
+    0.35,
+    0.0,
+    0.0
+  ],
+  "route_lateral_m": 0.02,
+  "route_lateral_faces": [
+    "F"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+ "frozen_utc": "2026-09-16T21:00:00Z",
+ "note": "Fixed before any policy training or evaluation. contact_n was calibrated from the proposed 0.05 N to 0.01 N before freezing because the 10 g pen weighs 0.098 N, so resting support on four fingertips is about 0.025 N per finger.",
+ "simulator": "Isaac Lab 2.3.2 / Isaac Sim 5.1 PhysX, official Sharpa Wave right hand USD (sharpa-urdf-usd-xml 0d447b6)",
+ "physics": "nominal: gravity 9.81, friction 1.0 x U(0.9, 1.1), pen mass nominal x U(0.85, 1.15); simplified presets are reported separately and never count",
+ "control_hz": 60,
+ "spin_sign": 1,
+ "turns": 3,
+ "max_turn_s": 3.0,
+ "hold_s": 1.0,
+ "max_stop_s": 1.0,
+ "hold_max_omega_deg_s": 30.0,
+ "hold_max_heading_change_deg": 30.0,
+ "hold_min_support_frac": 0.9,
+ "contact_n": 0.01,
+ "drop_z": 0.03,
+ "drop_xy": 0.08,
+ "max_tilt_deg": 45.0,
+ "joint_limit_tol_rad": 0.02,
+ "max_penetration_mm": 2.0,
+ "participation_fingers": [
+  "middle",
+  "ring",
+  "pinky"
+ ],
+ "participation_min_fingers": 2,
+ "participation_min_s": 0.3,
+ "active_joint_speed_rad_s": 0.15,
+ "thumb_free_min_s": 0.5,
+ "thumb_free_min_rotation_deg": 90.0,
+ "thumb_free_min_other_fingers": 2,
+ "thumb_free_support_frac": 0.8,
+ "max_episode_s": 12.0,
+ "randomization": {
+  "joint_noise_rad": 0.03,
+  "pen_xy_mm": 2.0,
+  "pen_yaw_deg": 8.0,
+  "mass_scale": [
+   0.85,
+   1.15
+  ],
+  "friction_scale": [
+   0.9,
+   1.1
+  ]
+ },
+ "development_seeds": "41000000 upward",
+ "final_seeds": "41100000-41100099, unused until a policy is frozen",
+ "final_target": "at least 95 of 100 trials pass every numerical check, plus visual review of complete videos",
+ "added_checks": {
+  "added_utc": "2026-09-17T03:15:00Z",
+  "reason": "Stricter only; nothing above was loosened. The user flagged a flat finger in the best candidate: its ring finger never touched the pen (0% contact, zero joint speed) while the 2-of-3 participation rule still passed.",
+  "all_fingers": {
+   "fingers": [
+    "index",
+    "middle",
+    "ring",
+    "pinky"
+   ],
+   "min_active_s": 0.3,
+   "min_revolutions": 2,
+   "rule": "each listed finger needs >= min_active_s of active contact (touching and its joint RMS speed > active_joint_speed_rad_s, during forward rotation) in at least min_revolutions of the 3 revolutions"
+  }
+ }
+}

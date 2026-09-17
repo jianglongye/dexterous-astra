@@ -1,0 +1,8 @@
+{
+  "phase": {"lateral_m": 0.06, "clearance_m": 0.085, "retreat_m": 0.10, "lower_waiting_hand": false},
+  "local": {"lateral_m": 0.02, "clearance_m": 0.085, "retreat_m": 0.10, "lower_waiting_hand": true},
+  "inline": {"lateral_m": 0.0, "clearance_m": 0.085, "retreat_m": 0.10, "lower_waiting_hand": true},
+  "short": {"lateral_m": 0.02, "clearance_m": 0.06, "retreat_m": 0.075, "lower_waiting_hand": true},
+  "direct": {"lateral_m": 0.0, "clearance_m": 0.06, "retreat_m": 0.075, "lower_waiting_hand": true},
+  "tight": {"lateral_m": 0.0, "clearance_m": 0.045, "retreat_m": 0.06, "lower_waiting_hand": true}
+}

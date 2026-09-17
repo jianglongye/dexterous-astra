@@ -1,0 +1,12 @@
+{
+  "label": "simplified cube physics for the one-hand policy solve",
+  "pedestal_half_width_m": 0.025,
+  "finger_friction_multiplier": 1.5,
+  "centre_friction_multiplier": 0.5,
+  "detent_stiffness_Nm_per_rad": 0.01,
+  "passive_cubie_alignment": {
+    "stiffness_Nm_per_rad": 0.04,
+    "width_degrees": 8.0,
+    "damping_Nm_s_per_rad": 0.0003
+  }
+}
